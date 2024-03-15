@@ -1,0 +1,8 @@
+@media only screen and (max-width: 400px) {
+  #user-name,
+  #user-password,
+  #submit-btn {
+    width: 30vw;
+    height: 5vh;
+  }
+}
