@@ -15,6 +15,7 @@ function fetchInput() {
   validateUsername();
   validatePassword();
   console.log(validUser);
+  saveInput();
 }
 
 function validateUsername() {
@@ -38,4 +39,11 @@ function validatePassword() {
       "Your passowrd needs to be between 6 and 15 letters long and contain a number";
   }
 }
-console.log(window.history.length);
+
+function saveInput() {
+  if (validUser && validPassword) {
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+    console.log("Both set!");
+  }
+}
