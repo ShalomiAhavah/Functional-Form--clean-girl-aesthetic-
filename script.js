@@ -13,6 +13,7 @@ function fetchInput() {
   password = passwordInput.value;
   console.log(username, password);
   validateUsername();
+  validatePassword();
   console.log(validUser);
 }
 
@@ -26,3 +27,15 @@ function validateUsername() {
       "Your username needs to be between 6 and 15 letters long";
   }
 }
+
+function validatePassword() {
+  let length = password.length;
+  if (length > 5 && length < 15 && /\d/.test(password) === true) {
+    validPassword = true;
+    passwordError.innerHTML = "";
+  } else {
+    passwordError.innerHTML =
+      "Your passowrd needs to be between 6 and 15 letters long and contain a number";
+  }
+}
+console.log(window.history.length);
