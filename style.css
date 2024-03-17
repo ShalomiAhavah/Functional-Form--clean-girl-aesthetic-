@@ -49,7 +49,7 @@ body {
 #submit-btn {
   width: 40vw;
   height: 7.5vh;
-  margin: 2vh 0;
+  margin: 1vh 0 4vh 0;
   border-radius: 10px;
   border: none;
   box-sizing: content-box;
@@ -71,10 +71,22 @@ label {
   text-shadow: var(--text-shadow-standOut);
 }
 
+#username-error-space,
+#password-error-space {
+  width: 42vw;
+  height: 3vh;
+  color: var(--white);
+  margin: -3.25vh 0 3vh 0;
+  text-shadow: -1px 1px red;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
 #submit-btn {
   /* *Additional styling can be found alongside the input styling */
   height: 6vh;
-  margin: 5vh 0 0 0;
+  margin: 55vh 0 0 0;
+  position: absolute;
 }
 #submit-btn:hover,
 #submit-btn:active {

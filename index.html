@@ -13,12 +13,14 @@
         <form action="login" id="login-form">
             <h2 class="login-h2">Log In</h2>
             <label for="username">Username</label>
-            <input type="text" name="username" id="user-name" autocomplete="username">
+            <input type="text" name="username" id="user-name" autocomplete="username" value="Jewels">
+            <span id="username-error-space"></span>
 
             <label for="password">Password</label>
-            <input type="password" name="password" id="user-password" autocomplete="current-password">
+            <input type="password" name="password" id="user-password" autocomplete="current-password" value="009">
+            <span id="password-error-space"></span>
 
-            <button type="button" id="submit-btn" onclick="displayInput()">Log In</button>
+            <button type="button" id="submit-btn" onclick="fetchInput()">Log In</button>
         </form>
     </div>
     <script src="script.js"></script>
